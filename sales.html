@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Sales Data</title>
 </head>
+
 <body>
-    <section id="locations"></section>
+    <header>
+        <h1>Sales Data</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Homepage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" id="shopForm">
+            <fieldset>
+                <legend>Request a new cookie stand</legend>
+                <label for="locationName">Location:</label><input type="text" id="locationName" required name="locationName"
+                    placeholder="enter a city" autocomplete="off" pattern="^[a-zA-Z]+$"/>
+                <br />
+                <label for="minCustomer">Minimum Customers:</label><input type="text" id="minCustomer"
+                    name="minCustomer" placeholder="enter a number" autocomplete="off" required pattern="^\d+$"/>
+                <br />
+                <label for="maxCustomer">Maximum Customers:</label><input type="text" id="maxCustomer"
+                    name="maxCustomer" placeholder="enter a number" autocomplete="off" required pattern="^\d+$"/>
+                <br />
+                <label for="avgCookies">Average Cookies per Customer:</label><input type="text" id="avgCookies"
+                    name="avgCookies" placeholder="enter a number" autocomplete="off" required pattern="^[\d\.]+$"/>
+                <br />
+                <input type="submit" name="submit" value="submit" />
+            </fieldset>
+        </form>
+        <div id="locations">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
     <script src="js/app.js"></script>
 </body>
+
 </html>
