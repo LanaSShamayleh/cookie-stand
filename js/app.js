@@ -116,15 +116,15 @@ let lima={
 
 // // documentation (by using document object) on sales.html file // //
 
-let parentt=document.getElementById('locations');
+let parent1=document.getElementById('location');
 
 // create an image element on sales.html file
 
-let image=document.create('img');
+let image=document.createElement('img');
 
 // add the new element on the html page
 
-parentt.appendChild(image);
+parent1.appendChild(image);
 image.setAttribute('src','img/salmon.png');
 
 // Setting For Seattle Location //
@@ -133,13 +133,13 @@ seattle.cust();
 
 //First Header & First List
 let firstHeader=document.createElement('h2');
-parentt.appendChild(firstHeader);
+parent1.appendChild(firstHeader);
 firstHeader.textContent='seattle';
 
 let firstList=document.createElement('ul');
-parentt.appendChild(firstList);
+parent1.appendChild(firstList);
 
-// For Loop to put the items of the seattle list 
+// For Loop to put the items of the seattle list
 
 for (let n= 0; n < seattle.numCook.length; n++) {
   let listItem = document.createElement('li');
@@ -148,7 +148,7 @@ for (let n= 0; n < seattle.numCook.length; n++) {
   totalCook = totalCook + seattle.numCook[n];
 }
 
-// add the totals cookies to previous list 
+// add the totals cookies to previous list
 
 let listItem = document.createElement('li');
 firstList.appendChild(listItem);
@@ -156,18 +156,18 @@ listItem.textContent = `Total: ${totalCook} cookies`;
 
 // Setting For Tokyo Location //
 
-let totalCook=0;
+totalCook =0;
 tokyo.cust();
 
 //First Header & Second List
-let firstHeader=document.createElement('h2');
-parentt.appendChild(firstHeader);
+firstHeader=document.createElement('h2');
+parent1.appendChild(firstHeader);
 firstHeader.textContent='Tokyo';
 
-let firstList=document.createElement('ul');
-parentt.appendChild(firstList);
+firstList=document.createElement('ul');
+parent1.appendChild(firstList);
 
-// For Loop to put the items of the tokyo list 
+// For Loop to put the items of the tokyo list
 
 for (let n= 0; n < tokyo.numCook.length; n++) {
   let listItem = document.createElement('li');
@@ -176,25 +176,25 @@ for (let n= 0; n < tokyo.numCook.length; n++) {
   totalCook = totalCook + tokyo.numCook[n];
 }
 
-// add the totals cookies to previous list 
+// add the totals cookies to previous list
 
-let listItem = document.createElement('li');
+listItem = document.createElement('li');
 firstList.appendChild(listItem);
 listItem.textContent = `Total: ${totalCook} cookies`;
 
 // Setting For Dubai Location //
-let totalCook=0;
+totalCook=0;
 dubai.cust();
 
 //First Header & First List
-let firstHeader=document.createElement('h2');
-parentt.appendChild(firstHeader);
+firstHeader=document.createElement('h2');
+parent1.appendChild(firstHeader);
 firstHeader.textContent='Dubai';
 
-let firstList=document.createElement('ul');
-parentt.appendChild(firstList);
+firstList=document.createElement('ul');
+parent1.appendChild(firstList);
 
-// For Loop to put the items of the dubai list 
+// For Loop to put the items of the dubai list
 
 for (let n= 0; n < dubai.numCook.length; n++) {
   let listItem = document.createElement('li');
@@ -203,27 +203,27 @@ for (let n= 0; n < dubai.numCook.length; n++) {
   totalCook = totalCook + dubai.numCook[n];
 }
 
-// add the totals cookies to previous list 
+// add the totals cookies to previous list
 
-let listItem = document.createElement('li');
+listItem = document.createElement('li');
 firstList.appendChild(listItem);
 listItem.textContent = `Total: ${totalCook} cookies`;
 
 
 // Setting For Paris Location //
 
-let totalCook=0;
+totalCook=0;
 paris.cust();
 
 //First Header & First List
-let firstHeader=document.createElement('h2');
-parentt.appendChild(firstHeader);
-firstHeader.textContent='seattle';
+firstHeader=document.createElement('h2');
+parent1.appendChild(firstHeader);
+firstHeader.textContent='Paris';
 
-let firstList=document.createElement('ul');
-parentt.appendChild(firstList);
+firstList=document.createElement('ul');
+parent1.appendChild(firstList);
 
-// For Loop to put the items of the seattle list 
+// For Loop to put the items of the seattle list
 
 for (let n= 0; n < paris.numCook.length; n++) {
   let listItem = document.createElement('li');
@@ -232,26 +232,26 @@ for (let n= 0; n < paris.numCook.length; n++) {
   totalCook = totalCook + paris.numCook[n];
 }
 
-// add the totals cookies to previous list 
+// add the totals cookies to previous list
 
-let listItem = document.createElement('li');
+listItem = document.createElement('li');
 firstList.appendChild(listItem);
 listItem.textContent = `Total: ${totalCook} cookies`;
 
 
 // Setting For Lima Location //
-let totalCook=0;
+totalCook=0;
 lima.cust();
 
 //First Header & First List
-let firstHeader=document.createElement('h2');
-parentt.appendChild(firstHeader);
-firstHeader.textContent='seattle';
+firstHeader=document.createElement('h2');
+parent1.appendChild(firstHeader);
+firstHeader.textContent='Lima';
 
-let firstList=document.createElement('ul');
-parentt.appendChild(firstList);
+firstList=document.createElement('ul');
+parent1.appendChild(firstList);
 
-// For Loop to put the items of the Lima list 
+// For Loop to put the items of the Lima list
 
 for (let n= 0; n < lima.numCook.length; n++) {
   let listItem = document.createElement('li');
@@ -260,8 +260,8 @@ for (let n= 0; n < lima.numCook.length; n++) {
   totalCook = totalCook + lima.numCook[n];
 }
 
-// add the totals cookies to previous list 
+// add the totals cookies to previous list
 
-let listItem = document.createElement('li');
+listItem = document.createElement('li');
 firstList.appendChild(listItem);
 listItem.textContent = `Total: ${totalCook} cookies`;
