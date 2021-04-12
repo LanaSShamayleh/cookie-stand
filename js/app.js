@@ -8,10 +8,9 @@ let storeArray = [];
 let footer = document.createElement('tfoot');
 
 
-
 // Generating random numbers
 function randomValue(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 1) + min); }
 }
 
 
@@ -146,6 +145,7 @@ paris.calccookPerhour();
 let lima = new Store('Lima', 2, 16, 4.6);
 lima.calccustPerHour();
 lima.calccookPerhour();
+
 
 storeArray = [seattle, tokyo, dubai, paris, lima];
 
