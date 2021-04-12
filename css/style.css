@@ -2,11 +2,22 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: Black;
     font-style: oblique;
+    font-size: xx-large;
+  }
+
+  h2{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(99, 51, 100);
+    font-style: normal;
+    font-size: xx-large;
   }
   img {
   
     display: block;
   }
+
+  
   th, td{
     padding: 8px;
     border-bottom: 1px solid rgb(39, 28, 28);
@@ -43,3 +54,4 @@ input:valid {
 input:invalid {
     border: 1px solid red;
 }
+
