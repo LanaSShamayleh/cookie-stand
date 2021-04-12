@@ -1,0 +1,21 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: Black;
+    font-style: oblique;
+  }
+  img {
+  
+    display: block;
+  }
+  th, td{
+    padding: 8px;
+    border-bottom: 1px solid rgb(39, 28, 28);
+    color:purple;
+    background-color:grey;
+  }
+  table{
+    text-align: center;
+    width: 100%;
+    margin-top: 5% ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
