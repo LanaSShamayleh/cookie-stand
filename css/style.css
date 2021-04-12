@@ -19,3 +19,15 @@ h1{
     margin-top: 5% ;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  input:invalid {
+    border: 2px outset red;
+  }
+  
+  input:invalid:required {
+    border: 2px double rgb(189, 201, 84);
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
