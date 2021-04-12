@@ -5,6 +5,8 @@ let tableID = document.getElementById('tableID');
 let arrTotal = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 let totals = 0;
 let storeArray = [];
+let footer = document.createElement('tfoot');
+
 
 
 // Generating random numbers
@@ -81,7 +83,6 @@ function heading() {
 
 // functions to create footers
 function footers() {
-  let footer = document.createElement('tfoot');
   tableID.appendChild(footer);
   let tableRow = document.createElement('tr');
   footer.appendChild(tableRow);
@@ -99,10 +100,6 @@ function footers() {
   tdEl.textContent = `${totals}`;
 }
 
-heading();
-
-
-
 // creating the from
 
 
@@ -114,14 +111,14 @@ function stores(event) {
 
   let storeName = event.target.storeName.value;
 
-  let minCust = parseInt(event.target.minCust.value);
+  let mincust = parseInt(event.target.mincust.value);
 
-  let maxCust = parseInt(event.target.maxCust.value);
+  let maxcust = parseInt(event.target.maxcust.value);
 
 
-  let avgCook = parseFloat(event.target.avgCook.value);
+  let avgcook = parseFloat(event.target.avgcook.value);
 
-  let newStore = new Store(storeName, minCust, maxCust, avgCook);
+  let newStore = new Store(storeName, mincust, maxcust, avgcook);
   newStore.calccustPerHour();
   newStore.calccookPerhour();
   newStore.createElement();
@@ -137,7 +134,7 @@ heading();
 let seattle = new Store('Seattle', 23, 65, 6.3);
 seattle.calccustPerHour();
 seattle.calccookPerhour();
-let tokyo = new ('Tokyo', 3, 24, 1.2);
+let tokyo = new Store('Tokyo', 3, 24, 1.2);
 tokyo.calccustPerHour();
 tokyo.calccookPerhour();
 let dubai = new Store('Dubai', 11, 38, 3.7);

@@ -20,14 +20,26 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  input:invalid {
-    border: 2px outset red;
-  }
-  
-  input:invalid:required {
-    border: 2px double rgb(189, 201, 84);
-  }
-  
-  input:valid {
-    border: 2px solid black;
-  }
+  legend, input, label{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+label, input{
+    display: inline-block;
+    width: 300px;
+}
+label{
+    text-align: right;
+    width: 300px;
+}
+legend{
+    font-size: 20px;
+}
+input:valid {
+    border: 1px solid black;
+}
+input:invalid {
+    border: 1px solid red;
+}

@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <title>Sales</title>
-        <link href="css/style.css" rel="stylesheet" />
-    </head>
-    
-    <body>
-        <center>
-    
-            <h1> Sales Data</h1>
-            <img src="img/salmon.png" alt="Salmon">
-        </center>
-        <main id="mainelement">
-            <table id="tableID"></table>
+    <title>Sales</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
 
-            <form id="storeform">
-                <fieldset>
-                  <legend>Information</legend>
-                  <label for="StoreName">Location</label>
-                  <input type="text" id="StoreName" required />
-                  <br />
-                  <label for="minCust">Minimum No. Customers</label>
-                  <input type="number" id="minCust" required />
-                  <br />
-                  <label for="maxCust">Maximum No. Customers</label>
-                  <input type="number" id="maxcust" required />
-                  <br />
-                  <label for="avgCook">Average Cookie Sales</label>
-                  <input type="number" id="avgCook" step="0.01" required />
+<body>
+    <center>
+
+        <h1> Sales Data</h1>
+        <img src="img/salmon.png" alt="Salmon">
+    </center>
+    <hr>
+    <form id="storeform">
+        <fieldset>
+            <legend>Information</legend>
+            <label for="storeName">Location</label>
+            <input type="text" id="storeName" required />
+            <br />
+            <label for="mincust">Minimum No. Customers</label>
+            <input type="number" id="mincust" required />
+            <br />
+            <label for="maxcust">Maximum No. Customers</label>
+            <input type="number" id="maxcust" required />
+            <br />
+            <label for="avgcook">Average Cookie Sales</label>
+            <input type="number" id="avgcook" step="0.01" required />
+
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <main id="mainelement">
+        <table id="tableID"></table>
+
         
-                  <input type="submit" value="Submit" />
-                </fieldset>
-              </form>
-        </main>
-        <script src="js/app.js"></script>
-    </body>
-    
+    </main>
+</body>
+<script src="js/app.js"></script>
+
 </html>
