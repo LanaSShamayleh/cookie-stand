@@ -11,7 +11,7 @@ let footer = document.createElement('tfoot');
 // Generating random numbers
 function randomValue(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); }
-}
+
 
 
 // Generating the objects by construtors
