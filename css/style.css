@@ -1,28 +1,185 @@
-h1{
+body{
+  background-color: cornsilk;
+  font-family: "Sofia", sans-serif;
+}
+header h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: Black;
     font-style: oblique;
     font-size: xx-large;
+    font-family: "Sofia", sans-serif;
+ text-align: center;
   }
 
+  #list {
+margin-bottom: 0px;
+text-align: center;
+font-size: larger;  
+font-style: oblique;}
   h2{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(99, 51, 100);
     font-style: normal;
     font-size: xx-large;
+    font-family: "Sofia", sans-serif;
+    margin-left: 50px;
+
   }
-  img {
-  
-    display: block;
+  #images {
+    display: inline-block;
+align-content: stretch;  }
+
+  #img1 {
+  width: 300px;
+  height: 200px;
+  float: right;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: 500px;
+  border: solid goldenrod;
+  border-radius: 10px;
+  animation-direction: reverse;
+  }
+  @keyframes example {
+    0%   { right:500px; top:0px;}
+    100%  {left:500px ; top:0px;}
   }
 
-  
+
+  #img2 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 500px;
+    margin-right: auto;
+    border: solid goldenrod;
+    border-radius: 10px;
+    }
+    @keyframes example {
+      0%   { left:0px; top:0px;}
+      100%  {right:500px ; top:0px;}
+    }
+  #img3 {
+  width: 300px;
+  height: 200px;
+  float: right;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: 500px;
+  border: solid goldenrod;
+  border-radius: 10px;
+  animation-direction: reverse;
+  }
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    100%  {left:500px ; top:0px;}
+  }
+  #img4 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 500px;
+    margin-right: auto;
+    border: solid goldenrod;
+    border-radius: 10px;
+    }
+    @keyframes example {
+      0%   { left:0px; top:0px;}
+      100%  {right:500px ; top:0px;}
+    }
+  #img5 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: 500px;
+    border: solid goldenrod;
+    border-radius: 10px;
+    animation-direction: reverse;
+    }
+    @keyframes example {
+      0%   { left:0px; top:0px;}
+      100%  {left:500px ; top:0px;}
+    }
+  #img6 {
+    width: 300px;
+    height: 200px;
+    float: right;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 500px;
+    margin-right: auto;
+    border: solid goldenrod;
+    border-radius: 10px;
+    }
+    @keyframes example {
+      0%   { left:0px; top:0px;}
+      100%  {right:500px ; top:0px;}
+    }
+  #img7 {
+  width: 300px;
+  height: 200px;
+  float: right;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: 500px;
+  border: solid goldenrod;
+  border-radius: 10px;
+  animation-direction: reverse;
+  }
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    100%  {left:500px ; top:0px;}
+  }
+  main hr{
+
+   height: 30px;
+   clear:both;
+   background-color: rgb(139, 112, 135);
+
+  }
   th, td{
     padding: 8px;
     border-bottom: 1px solid rgb(39, 28, 28);
     color:purple;
     background-color:grey;
+    font-family: "Sofia", sans-serif;
   }
   table{
     text-align: center;
@@ -33,25 +190,61 @@ h1{
 
   legend, input, label{
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Sofia", sans-serif;
     margin: 10px;
     text-align: center;
 }
 label, input{
     display: inline-block;
     width: 300px;
+    font-family: "Sofia", sans-serif;
 }
 label{
     text-align: right;
     width: 300px;
+    font-family: "Sofia", sans-serif;
 }
 legend{
     font-size: 20px;
+    font-family: "Sofia", sans-serif;
 }
 input:valid {
     border: 1px solid black;
 }
 input:invalid {
     border: 1px solid red;
+    font-family: "Sofia", sans-serif;
 }
 
+#btn {
+
+  float:left;
+  font-size:30px;
+  background-color: rgb(167, 70, 91);
+  color:white;
+  border:rgb(167, 70, 91);
+  padding: 15px 30px;
+  font-family: "Sofia", sans-serif;
+
+
+}
+
+ul{
+
+  margin-left: 30px;
+  font-size: larger;
+}
+p{
+
+ margin-left:30px ; 
+ font-size: larger;
+}
+hr{
+  margin-top: 50px;
+}
+footer{
+  margin-top: 50px;
+  font-family: "Sofia", sans-serif;
+
+  font-size: larger;
+}
